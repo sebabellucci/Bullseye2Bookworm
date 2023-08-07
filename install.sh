@@ -14,6 +14,18 @@ cp sources.list /etc/apt/sources.list
 apt update
 apt upgrade -y
 
-# Install package 
-apt install mariadb-client apache2 curl software-properties-common gnupg2 wget php php-cgi php-mysqli php-pear php-mbstring libapache2-mod-php php-common php-phpseclib php-mysql php-curl php-imagick php-xml php-zip php-gd php-intl -y
+# Install Apache
+apt install wget php php-cgi php-mysqli php-pear php-mbstring libapache2-mod-php php-common php-phpseclib php-mysql php-curl php-imagick php-xml php-zip php-gd php-intl -y
+
+apt install mariadb-client apache2 curl software-properties-common gnupg2 
+
+
+# Install CertBot
+sudo apt install certbot python3-certbot-apache
+
+
+chmod -R 755 /var/www/html/
+chown -R www-data:www-data /var/www/html/
+
+systemctl restart apache2
 
