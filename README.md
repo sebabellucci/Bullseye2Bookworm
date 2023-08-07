@@ -1,5 +1,5 @@
 # Bullseye2Bookworm
-Debian customizations from Noventiq to Lightshil
+Debian customizations from Noventiq to AWS Lightshil
  
 ### To install:
 
