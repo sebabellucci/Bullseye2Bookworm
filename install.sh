@@ -17,7 +17,7 @@ apt upgrade -y
 # Install Apache
 apt install wget php php-cgi php-mysqli php-pear php-mbstring libapache2-mod-php php-common php-phpseclib php-mysql php-curl php-imagick php-xml php-zip php-gd php-intl -y
 
-apt install mariadb-client apache2 curl software-properties-common gnupg2 
+apt install apache2 curl software-properties-common gnupg2 
 
 
 # Install CertBot
